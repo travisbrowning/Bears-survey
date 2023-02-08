@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTC-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <header>
+      <h1 id="title"> Chicago Bears Survey Form </h1>
+      <p id="description">Thank you for taking the time to help us improve the team.</p>
+      </header>
+    
+      <main>
+        <div id="surveybox">
+        <form id="survey-form">
+          <label id="name-label" for="name"> Name: </label>
+          <input id="name" type="text" required placeholder="Name" value="name"> <br>
+          <label id="email-label" for="email"> Email: </label> <input id="email" type="email" required placeholder="Email" value="email"> <br>    
+          <label id="number-label" for="number"> Age: </label>
+          <input id="number" type="number" min="13" max="120" placeholder="Years"> 
+          <hr>  
+          <label for="dropdown"> Do we keep Justin Fields? </label>
+          <select id="dropdown">
+            <option> Yes! </option>
+            <option> No! </option>
+            <option> I'm willing to trade him. </option>
+            <option> Even thinking about trading him is dumb. </option>
+          </select>
+          <hr>
+<p> What's more important in the Draft? </p>
+<label id="offense-label" for="offense"> Offense </label>
+          <input type="radio" name="draft" id="offense" value="offense">
+        
+          <label id="defense-label" for="defense"> Defense </label>
+          <input type="radio" name="draft" id="defense" value="defense">
+          <hr>
+
+<fieldset>
+  <legend> Who do we extend? </legend>
+
+          <label for="monty"> David Montgomery </label>
+          <input type="checkbox" id="monty" name="monty" value="monty"><br>
+
+          <label for="kmet"> Cole Kmet </label>
+          <input type="checkbox" id="kmet" name="kmet" value="kmet"><br>
+
+          <label for="mooney"> Darnell Mooney </label>
+          <input type="checkbox" id="mooney" name="mooney" value="mooney"><br>
+
+          <label for="johnson"> Jaylon Johnson </label>
+          <input type="checkbox" id="johnson" name="johnson" value="johnson"><br>
+          </fieldset>
+
+          <hr>
+
+          <label for="comments"> Any additional comments for this offseason? </label><br>
+          <textarea id="comments" name="comments" rows="10" cols="50"></textarea>
+          <hr>
+          <input type="submit" id="submit">
+        
+
+          
+          
+
+        </form>
+      </main>
+      </div>
+      </body>
+  </html>
